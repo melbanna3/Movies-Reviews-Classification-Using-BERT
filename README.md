@@ -32,7 +32,13 @@ We used NLP library such as nltk to pre-process the data
 
 We build a classifier model based on BERT. We used transformers library
 supplied by hugging face to get a pretrained and ready version of BERT model. It helped us 
-to tokenize the input sentence in the BERT required form and to pad the
+to tokenize the input sentence in the BERT required form and to pad the short sentences or trim the long ones.
+We used the CLS token embedding outputs of BERT as input to the hidden dense classification layers we need to add after BERT.
+This embedding is of size 768.
+We added 4 hidden layers of 512, 256, 128, 64 units respectively before the output
+layer. We used binary cross entropy loss and adam optimizer.
+
+This Project worked with pre-processed data and data withoud pre-processing, also e compared between them
 
 ### Data, with pre-processing, Accuracy:
 
@@ -40,11 +46,4 @@ to tokenize the input sentence in the BERT required form and to pad the
 
 ### Data, without pre-processing, Accuracy:
 
-
-short sentences or trim the long ones. We used the CLS token embedding outputs of
-BERT as input to the hidden dense classification layers we need to add after BERT. This
-embedding is of size 768.
-We added 4 hidden layers of 512, 256, 128, 64 units respectively before the output
-layer. We used binary cross entropy loss and adam optimizer.
-
-This Project worked with pre-processed data and data withoud pre-processing, also e compared between them 
+![2](https://user-images.githubusercontent.com/87400312/175786336-f69b674e-1ad2-4a69-944e-ef8ad8e56855.PNG)
