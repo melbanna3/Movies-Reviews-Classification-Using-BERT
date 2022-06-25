@@ -33,6 +33,14 @@ We used NLP library such as nltk to pre-process the data
 We build a classifier model based on BERT. We used transformers library
 supplied by hugging face to get a pretrained and ready version of BERT model. It helped us 
 to tokenize the input sentence in the BERT required form and to pad the
+
+### Data, with pre-processing, Accuracy:
+
+
+
+### Data, without pre-processing, Accuracy:
+
+
 short sentences or trim the long ones. We used the CLS token embedding outputs of
 BERT as input to the hidden dense classification layers we need to add after BERT. This
 embedding is of size 768.
