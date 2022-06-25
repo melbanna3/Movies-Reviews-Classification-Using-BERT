@@ -36,7 +36,7 @@ to tokenize the input sentence in the BERT required form and to pad the
 
 ### Data, with pre-processing, Accuracy:
 
-
+![1](https://user-images.githubusercontent.com/87400312/175786318-c7296ac9-7631-4c74-83a8-dff4c6a96f28.PNG)
 
 ### Data, without pre-processing, Accuracy:
 
